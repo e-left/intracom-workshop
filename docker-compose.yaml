@@ -6,4 +6,4 @@ services:
     web:
       image: eleft/intracomfrontend
       ports:
-        - 8080:1234
+        - 8080:80

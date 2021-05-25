@@ -1,5 +1,5 @@
 import "./intracom.scss";
-import bootstrap from "bootstrap";
+import * as bootstrap from "bootstrap";
 import $ from "jquery";
 
 const rootUrl = "https://backend-e-left.cloud.okteto.net/";
@@ -29,7 +29,9 @@ eNodeBDropdown.on("change", function () {
     dataType: "json",
     success: function (result) {
       cellDropdown.empty();
-      cellDropdown.append("<option value=\"\" selected disabled>Please select a Cell</option>");
+      cellDropdown.append(
+        '<option value="" selected disabled>Please select a Cell</option>'
+      );
       tbody.empty();
       cellDropdown.prop("disabled", false);
       $.each(result, function () {
@@ -61,14 +63,13 @@ eNodeBDropdown.on("change", function () {
           this.retainability,
         ];
         let appendString = "";
-        for(e of elements) {
-            appendString += "<td>" + e + "</td>"
+        for (e of elements) {
+          appendString += "<td>" + e + "</td>";
         }
         tbody.append("<tr>" + appendString + "</tr>");
       });
     },
   });
-
 });
 
 cellDropdown.on("change", function () {
@@ -96,11 +97,20 @@ cellDropdown.on("change", function () {
           this.retainability,
         ];
         let appendString = "";
-        for(e of elements) {
-            appendString += "<td>" + e + "</td>"
+        for (e of elements) {
+          appendString += "<td>" + e + "</td>";
         }
         tbody.append("<tr>" + appendString + "</tr>");
       });
     },
   });
+});
+
+		
+$(function() {
+  $("#excel-btn").click(function(){
+  $("#logs_tbl").table2excel({
+      name: "Excel Document Name"
+  }); 
+   });
 });
