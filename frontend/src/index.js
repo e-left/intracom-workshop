@@ -2,7 +2,7 @@ import "./intracom.scss";
 import bootstrap from "bootstrap";
 import $ from "jquery";
 
-const rootUrl = "https://web-e-left.cloud.okteto.net/";
+const rootUrl = "https://backend-e-left.cloud.okteto.net/";
 
 const eNodeBDropdown = $("#enodeb");
 const cellDropdown = $("#cell");
