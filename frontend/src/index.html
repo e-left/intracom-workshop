@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cell Log Filter</title>
+        <meta charset="utf-8" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <h1 class="text-center">Cell Log Filter</h1>
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="enodeb" class="form-label">eNodeB</label>
+                        <select class="form-select" id="enodeb">
+                            <option value="" selected disabled>Please select an eNodeB</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="cell" class="form-label">Cell</label>
+                        <select class="form-select" id="cell" disabled>
+                            <option value="" selected disabled>Please select a Cell</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <table class="table" id="logs_tbl">
+                <thead>
+                  <tr>
+                    <th scope="col">Record Date</th>
+                    <th scope="col">eNodeB</th>
+                    <th scope="col">Cell</th>
+                    <th scope="col">Cell Availablility</th>
+                    <th scope="col">CQI</th>
+                    <th scope="col">Drops</th>
+                    <th scope="col">Accessibility</th>
+                    <th scope="col">Retainability</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-logs">
+                  <tr>
+                    
+                  </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+frontend/.cache/
+frontend/coverage/
+frontend/dist/*
+frontend/ node_modules/
+frontend/*.log
+frontend/.parcel-cache/
+frontend/.DS_Store
+frontend/.DS_Store?
+frontend/._*
+frontend/.Spotlight-V100
+frontend/.Trashes
+frontend/ehthumbs.db
+frontend/Thumbs.db
+
+backend/.gradle/
+backend/build/
+backend/build/classes/java/main/
