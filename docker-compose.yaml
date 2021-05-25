@@ -1,0 +1,9 @@
+services:
+    backend:
+      image: eleft/intracombackend
+      ports:
+        - 4567:4567
+    web:
+      image: eleft/intracomfrontend
+      ports:
+        - 8080:1234
